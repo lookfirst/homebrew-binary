@@ -7,9 +7,9 @@ class Jad < Formula
   version '1.5.8g'
 
   def install
-    man1.install Dir['jad.1']
-    libexec.install Dir['jad']
-    bin.install_symlink Dir["#{libexec}/jad"]    
+    man1.install 'jad.1'
+    libexec.install 'jad'
+    bin.install_symlink "#{libexec}/jad"
   end
 
 end
